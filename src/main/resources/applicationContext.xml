@@ -18,8 +18,8 @@
 	
     <!-- conexao.properties -->
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:conexao_homologacao.properties" />
-<!--         <property name="location" value="classpath:conexao_local.properties" /> -->
+        <!-- <property name="location" value="classpath:conexao_homologacao.properties" /> -->
+        <property name="location" value="classpath:conexao_local.properties" />
     </bean>
     <!-- SessionFactory do Hibernate -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
